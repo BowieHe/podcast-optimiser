@@ -1,0 +1,27 @@
+{
+	"name": "stt",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"transcribe": "ts-node transcribe.ts",
+		"dialogue": "ts-node dialogue-separator.ts",
+		"test-dialogue": "ts-node test-dialogue.ts",
+		"summarize": "ts-node dialogue-summarizer.ts",
+		"test-summarizer": "ts-node test-summarizer.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"devDependencies": {
+		"@types/node": "^24.0.15",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"@google/generative-ai": "^0.24.1",
+		"openai": "^5.10.1"
+	}
+}
